@@ -1,3 +1,3 @@
 # README
 
-Just a simple arithmetic expression parser for educational purposes.
+Just a simple arithmetic expression LL(1) parser for educational purposes.
