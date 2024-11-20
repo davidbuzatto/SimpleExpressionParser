@@ -20,9 +20,15 @@ public class Test {
             "3 * 3 + 4 * 4",
         };
         
+        System.out.println( "Without AST:\n" );
         for ( String expr : expressions ) {
             System.out.printf( "%s = %.2f\n", expr, ExpressionParser.eval( expr ) );
-            System.out.println( ExpressionParser.toString( expr ) );
+        }
+        
+        System.out.println( "\n\nWith AST:\n" );
+        for ( String expr : expressions ) {
+            System.out.printf( "%s = %.2f\n", expr, ExpressionParserAST.eval( expr ) );
+            System.out.println( ExpressionParserAST.toString( expr ) );
             System.out.println();
         }
         
